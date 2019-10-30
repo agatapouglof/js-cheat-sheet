@@ -1,8 +1,8 @@
 # Array manipulations
 
 - get the lentgth of an array ==> arr.length 
-** you can do arr.length = i to reduce the array to length i **
-** On peut reduire la taille d'un tableau en modifiant la valeur de sa proprite length a une valeur plus petite **
+- you can do arr.length = i to reduce the array to length i **
+- On peut reduire la taille d'un tableau en modifiant la valeur de sa proprite length a une valeur plus petite **
 
 ## Array declaration
 ```js
@@ -39,11 +39,29 @@
     arr.push(2,3,6); // ==> [1,2,3,6]
 ```
 
-### add element to the end of the array '.UNSHIFT'
+### add element to the beginning of the array '.UNSHIFT'
 - this function return the length of the new array
 
 ```js
     var arr = [];
     arr.unshift(1); // ==> [1]
     arr.unshift(2,3,6); // ==> [2,3,6,1]
+```
+
+## Remove element from array
+
+### revome the last the array '.POP'
+- this function return the last element of the array
+
+```js
+    var arr = [1,2,3,6];
+    arr.pop(); // ==> [1,2,3]
+```
+
+### revome first element of the array '.SHIFT'
+- this function return the first element of the array
+
+```js
+    var arr = [1,2,3,6];
+    arr.shift(); // ==> [2,3,6]
 ```
