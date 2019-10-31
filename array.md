@@ -50,7 +50,7 @@
 
 ## Remove element from array
 
-### revome the last the array '.POP'
+### revome the last element of the array '.POP'
 - this function return the last element of the array
 
 ```js
@@ -64,4 +64,28 @@
 ```js
     var arr = [1,2,3,6];
     arr.shift(); // ==> [2,3,6]
+```
+
+
+## Reverse an Array
+
+- this function reverse the order of the elements in the array
+- this function edit the existing array (so if you need old array use another variable for the .reverse())
+- return the reversed array
+```js
+    var arr = [2,5,9];
+    arr.reverse();
+    console.log(arr); // [0,5,2]
+```
+
+## find the index of an element in array with indexOf
+- return the first index of the element given as parameter
+- return -1 if no occurence of the element searched is in the array
+- can take a second parameter the index from where to start the search
+- ** arr.indexOf(élémentRecherché)
+- ** arr.indexOf(élémentRecherché, indiceDébut)
+```js
+    var arr = [4,'me',12, false, 'this'];
+    arr.indexOf(false) ; // 3 
+    arr.indexOf(12, 3) ; // -1 :: ici recherche de l'element a partir de l'index 3 
 ```
