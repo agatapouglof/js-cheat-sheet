@@ -1,7 +1,7 @@
 # Array  SPLICE // SLICE // SPLIT
 
 ## SPLICE() array.splice()
-@params{
+@params{ 
     startIndex,
     numberOfElementsToDelete,
     ...lists of elements to add
@@ -35,7 +35,7 @@ this method add, remove or replace elements of an array depending of the paramet
 ```
 
 ## SLICE arr.slice(startIndex, endIndex) , string.slice(startIndex, endIndex)
-this function return a part of an array or a string but not edit the existing array
+this function return a part of an array or a string but "NOT EDIT THE EXISTING ARRAY"
 !! pas de modification sur le tableau ou la chaine de caractere originale
 !! endIndex is not included in the returned array
 ```js
@@ -43,4 +43,19 @@ this function return a part of an array or a string but not edit the existing ar
     res = arr.slice(1,3);
     //  res ==> [2,3]
     //  arr ==> [1,2,3,4,5]
+```
+- can be used on string (string are arrays of characters)
+```js
+    var text = "my text message";
+    var short = text.slice(0,7); 
+    console.log(short) ; // my text
+```
+
+## SPLIT  str.split(separateur, nombreMaxDeSousChaines)
+- return array and not modify original string
+```js
+    var txt = "my text message si hello world !!";
+    txt.split(""); // ['m','y',' ', 't',.....] each caracter of the string
+    txt.split(); // ["my text message si hello world !!"]
+    txt.split(' ', 3); // ['my', 'text', 'message']
 ```
