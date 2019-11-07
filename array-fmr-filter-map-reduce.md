@@ -57,5 +57,5 @@ Reduit a un seul element un tableau bon pour les totaux
     var res = [0, 1, 2, 3, 4].reduce(function(accumulateur, valeurCourante, index, array){
     return accumulateur + valeurCourante;
     }, 10);
-    //  res ==> 16
+    //  res ==> 20
 ```
