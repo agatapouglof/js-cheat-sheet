@@ -1,7 +1,7 @@
 # Array function FILTER // MAP // REDUCE
 
 ## FILTER arr.filter(callbackFuction, thisArg)
-this function return a new array respecting this conditions given in callback function
+this function return a new array respecting the conditions given in callback function
 -
 callbackFunction(element, index, originalArray) return true or false
 - element : element courant du tableau
